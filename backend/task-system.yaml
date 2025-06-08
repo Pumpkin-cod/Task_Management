@@ -26,10 +26,11 @@ Resources:
       AllowedOAuthScopes:
         - email
         - openid
+        - profile
       CallbackURLs:
-        - https://localhost:3000
+        - http://localhost:5174
       LogoutURLs:
-        - https://localhost:3000
+        - http://localhost:5174
       SupportedIdentityProviders:
         - COGNITO
 
@@ -40,7 +41,8 @@ Resources:
       AllowUnauthenticatedIdentities: false
       CognitoIdentityProviders:
         - ClientId: !Ref UserPoolClient
-          ProviderName: !GetAtt UserPool.ProviderName
+          ProviderName: !Sub "cognito-idp.${AWS::Region}.amazonaws.com/${UserPool}"
+
 
   IdentityPoolRoleAttachment:
     Type: AWS::Cognito::IdentityPoolRoleAttachment
