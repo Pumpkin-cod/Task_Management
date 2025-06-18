@@ -29,8 +29,9 @@ Resources:
         - profile
       CallbackURLs:
         - http://localhost:5174
+        - https://master.d255owujid3nor.amplifyapp.com
       LogoutURLs:
-        - http://localhost:5174
+        - http://localhost:5174/login
       SupportedIdentityProviders:
         - COGNITO
 
