@@ -6,7 +6,7 @@ A full-stack task management application with separate admin and member interfac
 
 🚀 **[View Live Application]**
 **(https://master.d255owujid3nor.amplifyapp.com/admin/)**
-**(https://master.d255owujid3nor.amplifyapp.com/admin/)**
+**(https://master.d255owujid3nor.amplifyapp.com/member/)**
 
 ## Project Structure
 
